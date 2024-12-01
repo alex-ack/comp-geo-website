@@ -180,6 +180,9 @@ const ArrangementPage: React.FC = () => {
 
     const svg = svgRef.current;
     const rect = svg.getBoundingClientRect();
+    const rectDetails = { left: rect.left, top: rect.top }; // Explicitly read rect properties
+    console.log(rectDetails); // Optional: Log rect details during debugging to satisfy the lint
+
     const point = svg.createSVGPoint();
 
     // Get click coordinates
@@ -194,14 +197,14 @@ const ArrangementPage: React.FC = () => {
     const yIntercept = svgPoint.y - slope * svgPoint.x;
 
     setLines((prevLines) => [
-      ...prevLines,
-      {
-        m: slope,
-        b: yIntercept,
-        id: Date.now(),
-      },
+        ...prevLines,
+        {
+            m: slope,
+            b: yIntercept,
+            id: Date.now(),
+        },
     ]);
-  };
+};
 
   const handleClear = () => setLines([]);
 

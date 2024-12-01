@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import NotebookPage from '../components/NotebookPage';
 
 interface Point3D {
@@ -161,7 +161,7 @@ const EARTH_RADIUS = 6371; // km
 const radToDeg = (rad: number) => (rad * 180) / Math.PI;
 
 const GeodesicPage: React.FC = () => {
-  const navigate = useNavigate();
+  
   const location = useLocation();
   const [activeTab, setActiveTab] = useState('concept');
   const [selectedPoints, setSelectedPoints] = useState<number[]>([]);

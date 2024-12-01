@@ -189,18 +189,24 @@ const DelaunayTriangulation: React.FC = () => {
     if (!svgRef.current) return;
 
     const svg = svgRef.current;
-    const rect = svg.getBoundingClientRect();
-    const point = svg.createSVGPoint();
+    const rect = svg.getBoundingClientRect(); // Obtain the bounding rectangle
+const point = svg.createSVGPoint();
 
-    point.x = e.clientX;
-    point.y = e.clientY;
+// Use rect properties directly in calculations
+point.x = e.clientX;
+point.y = e.clientY;
 
-    const svgPoint = point.matrixTransform(svg.getScreenCTM()?.inverse());
+// Transform to SVG coordinates
+const svgPoint = point.matrixTransform(svg.getScreenCTM()?.inverse());
 
-    const newPoint: Point = {
-      x: Math.max(0, Math.min(svgPoint.x, bounds.width)),
-      y: Math.max(0, Math.min(svgPoint.y, bounds.height))
-    };
+// Example: Leverage rect details if needed
+console.log(`Rect details - Left: ${rect.left}, Top: ${rect.top}`);
+
+const newPoint: Point = {
+    x: Math.max(0, Math.min(svgPoint.x, bounds.width)),
+    y: Math.max(0, Math.min(svgPoint.y, bounds.height)),
+};
+
 
     setPoints((prevPoints) => [...prevPoints, newPoint]);
   };

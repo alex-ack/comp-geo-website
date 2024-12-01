@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import NotebookPage from '../components/NotebookPage';
 
 interface Point {

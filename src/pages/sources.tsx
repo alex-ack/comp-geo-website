@@ -1,4 +1,3 @@
-import React from 'react';
 import NotebookPage from '../components/NotebookPage';
 
 const Sources = () => {
