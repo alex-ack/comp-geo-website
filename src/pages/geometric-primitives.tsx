@@ -23,35 +23,7 @@ const GeometricPrimitives: React.FC = () => {
     area: null
   });
 
-  const codeExamples = {
-    point: `class Point:
-    def __init__(self, x: float, y: float):
-        self.x = x
-        self.y = y
-    
-    def distance_to(self, other: 'Point') -> float:
-        return math.sqrt((self.x - other.x)**2 + (self.y - other.y)**2)`,
-    line: `class Line:
-    def __init__(self, p1: Point, p2: Point):
-        self.p1 = p1
-        self.p2 = p2
-    
-    def length(self) -> float:
-        return self.p1.distance_to(self.p2)`,
-    polygon: `class Polygon:
-    def __init__(self, vertices: List[Point]):
-        self.vertices = vertices
-    
-    def area(self) -> float:
-        # Shoelace formula
-        area = 0
-        n = len(self.vertices)
-        for i in range(n):
-            j = (i + 1) % n
-            area += self.vertices[i].x * self.vertices[j].y
-            area -= self.vertices[j].x * self.vertices[i].y
-        return abs(area) / 2`
-  };
+  
 
   const calculateDistance = (p1: Point, p2: Point): number => {
     return Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2));

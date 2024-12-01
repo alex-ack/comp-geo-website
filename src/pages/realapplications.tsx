@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import NotebookPage from '../components/NotebookPage';
 import { ChevronRight } from 'lucide-react';
 

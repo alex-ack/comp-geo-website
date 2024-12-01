@@ -21,14 +21,15 @@ const VoronoiPage: React.FC = () => {
 
     const svg = svgRef.current;
     const rect = svg.getBoundingClientRect();
-    const point = svg.createSVGPoint();
+const point = svg.createSVGPoint();
 
-    // Get click coordinates relative to page
-    point.x = e.clientX;
-    point.y = e.clientY;
+// Adjust click coordinates relative to the SVG element
+point.x = e.clientX - rect.left;
+point.y = e.clientY - rect.top;
 
-    // Transform to SVG coordinates
-    const svgPoint = point.matrixTransform(svg.getScreenCTM()?.inverse());
+// Transform to SVG coordinates
+const svgPoint = point.matrixTransform(svg.getScreenCTM()?.inverse());
+
 
     // Constrain the point within bounds
     const newPoint: Point = {
