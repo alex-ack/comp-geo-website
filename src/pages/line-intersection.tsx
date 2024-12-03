@@ -314,7 +314,7 @@ class LineIntersection:
         <div>
           <h5 className="font-medium mb-2">Vector Cross Products in 2D</h5>
           <p className="text-gray-700">
-            At the heart of line intersection detection lies a powerful mathematical tool: the 2D cross product.
+            At the heart of line intersection detection lies the 2D cross product.
             For two vectors a = (ax, ay) and b = (bx, by), the 2D cross product is:
           </p>
           <div className="bg-white p-3 rounded mt-2 font-mono text-sm">

@@ -494,7 +494,7 @@ const GeodesicPage: React.FC = () => {
 
       {/* Mathematical Foundation */}
       <div className="bg-gray-50 p-4 rounded-lg mb-6">
-        <h4 className="font-medium mb-4">Mathematical Foundation</h4>
+        <h4 className="font-medium mb-4">Mathematical Foundation (because I think it's confusing)</h4>
         <div className="space-y-4">
           <div>
             <h5 className="font-medium mb-2">Spherical Coordinates</h5>

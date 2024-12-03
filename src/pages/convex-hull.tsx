@@ -349,14 +349,14 @@ const ConvexHull: React.FC = () => {
                         <li>Numerical Precision
                           <ul className="list-disc pl-5 mt-1">
                             <li>Floating-point arithmetic can cause issues</li>
-                            <li>Consider using integer coordinates or epsilon comparisons</li>
+                            <li>Use integer coordinates or epsilon comparisons</li>
                           </ul>
                         </li>
                         <li>Degenerate Cases
                           <ul className="list-disc pl-5 mt-1">
                             <li>All points collinear</li>
                             <li>Only two distinct points</li>
-                            <li>Solution: Handle these cases explicitly</li>
+                            <li>Solution: Handle these cases explicitly (unfortunately)</li>
                           </ul>
                         </li>
                       </ul>

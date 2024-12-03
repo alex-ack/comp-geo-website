@@ -4,7 +4,7 @@ const Sources = () => {
   return (
     <NotebookPage
       title="Sources & References"
-      description="Academic sources and references for computational geometry implementations."
+      description="Academic sources and references."
     >
       <div className="w-full">
         {/* Primary Sources Section */}
@@ -22,12 +22,12 @@ const Sources = () => {
                 Third Edition, Springer-Verlag
               </p>
               <div className="mt-3 text-gray-600">
-                This comprehensive textbook serves as the primary reference for algorithms and theoretical foundations. 
+                This textbook was my primary reference. I would highly recommend it for anyone interested in computational geometry! 
                 Specifically used for:
                 <ul className="list-disc pl-6 mt-2 space-y-1">
                   <li>Line arrangement implementation and analysis</li>
                   <li>Convex hull algorithms and complexity analysis</li>
-                  <li>Geometric primitives and robust implementations</li>
+                  <li>Geometric primitives</li>
                   <li>Theoretical foundations of computational geometry</li>
                 </ul>
               </div>
@@ -43,7 +43,7 @@ const Sources = () => {
                   <h4 className="font-medium mb-2">Geometric Algorithms</h4>
                   <ul className="list-disc pl-6 text-gray-700">
                     <li>CGAL - Computational Geometry Algorithms Library</li>
-                    <li>GeometryPrecise - Robust geometric primitives</li>
+                    <li>GeometryPrecise</li>
                     <li>SciPy Spatial algorithms</li>
                   </ul>
                 </div>
@@ -69,7 +69,7 @@ const Sources = () => {
                   <li>
                     <strong>Numerical Recipes</strong>
                     <p className="text-gray-600 mt-1">
-                      For robust numerical methods and computational considerations
+                      For simpler numerical methods and computational considerations
                     </p>
                   </li>
                   <li>

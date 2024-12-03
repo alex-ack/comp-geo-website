@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { ReactNode } from 'react';
 
 interface LayoutProps {
@@ -6,6 +6,9 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
   const notebooks = [
     { path: '/geometric-primitives', title: 'Geometric Primitives' },
     { path: '/convex-hull', title: 'Convex Hull' },
@@ -39,7 +42,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
         </div>
       </nav>
-      <main className="w-full m-0 p-0">
+      <main className={`w-full ${isHomePage ? 'm-0 p-0' : 'p-8'}`}>
         {children}
       </main>
     </div>

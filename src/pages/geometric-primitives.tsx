@@ -110,7 +110,7 @@ const GeometricPrimitives: React.FC = () => {
   return (
     <NotebookPage
       title="Geometric Primitives"
-      description="Learn about fundamental geometric objects like points, lines, and polygons."
+      description="These are the foundations of computational geometry. Learn about fundamental geometric objects like points, lines, and polygons."
     >
       <div className="w-full">
         {/* Tab Navigation */}
@@ -216,7 +216,7 @@ const GeometricPrimitives: React.FC = () => {
                 <h3 className="text-xl font-semibold mb-3">Lines: Connections in Space</h3>
                 <p className="mb-4 text-gray-700">
                   A line segment connects two points and carries properties like length, slope, 
-                  and direction. Lines are fundamental to shape construction and geometric analysis.
+                  and direction. Lines are fundamental to shape construction.
                 </p>
 
                 {/* Line Visualization */}
@@ -256,8 +256,7 @@ const GeometricPrimitives: React.FC = () => {
               <section>
                 <h3 className="text-xl font-semibold mb-3">Polygons: Enclosed Shapes</h3>
                 <p className="mb-4 text-gray-700">
-                  Polygons are closed shapes formed by connecting multiple points. They're essential 
-                  in computer graphics and computational geometry algorithms.
+                  Polygons are closed shapes formed by connecting multiple points.
                 </p>
 
                 {/* Polygon Visualization */}

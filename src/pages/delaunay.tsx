@@ -301,7 +301,7 @@ const newPoint: Point = {
               {/* Introduction */}
               <div className="mb-6">
                 <p className="mb-4 text-gray-700">
-                  Delaunay triangulation, named after Boris Delaunay, is a fundamental geometric structure that creates a triangulation of points with a special property: it maximizes the minimum angle of all triangles. This property ensures the triangles are as "well-shaped" as possible, avoiding skinny triangles that could cause numerical problems in computational applications.
+                There's another page on the general methods of triangulation, but Delaunay triangulation is special enough to warrant its own discussion. Delaunay triangulation, named after Boris Delaunay, is a fundamental geometric structure that creates a triangulation of points with a novel property: it maximizes the minimum angle of all triangles. This property ensures the triangles are as "well-shaped" as possible, avoiding skinny triangles that could cause numerical problems in computational applications.
                 </p>
                 
                 {/* Basic visualization */}

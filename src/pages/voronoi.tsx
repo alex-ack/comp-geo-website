@@ -117,7 +117,7 @@ const svgPoint = point.matrixTransform(svg.getScreenCTM()?.inverse());
       {/* Introduction */}
       <div className="mb-6">
         <p className="mb-4 text-gray-700">
-          Named after Georgy Voronoi, a Voronoi diagram is a partitioning of a plane into regions based on the principle of proximity. Given a set of points called sites, each region consists of all points closer to its site than to any other site. This elegant mathematical structure appears naturally in phenomena ranging from crystal formation to animal territories.
+          Named after Georgy Voronoi, a Voronoi diagram is a partitioning of a plane into regions based on the principle of proximity. Given a set of points called sites, each region consists of all points closer to its site than to any other site. Fun fact: this mathematical structure appears naturally in phenomena ranging from crystal formation to animal territories.
         </p>
         
         {/* Basic visualization */}

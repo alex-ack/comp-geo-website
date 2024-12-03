@@ -115,7 +115,7 @@ const ApplicationsPage = () => {
   return (
     <NotebookPage
       title="Real-World Applications"
-      description="Explore how computational geometry concepts are applied across different industries and domains."
+      description="Computational Geometry is everywhere..."
     >
       <div className="w-full space-y-6">
         {/* Category Navigation */}

@@ -396,8 +396,7 @@ def triangulate_polygon(vertices: List[Point]) -> List[Tuple[Point, Point, Point
                   <p className="mb-4 text-gray-700">
                     Polygon triangulation is a fundamental problem in computational geometry that involves dividing a polygon into a set 
                     of non-overlapping triangles. Think of it as breaking down a complex shape into the simplest possible geometric 
-                    forms - triangles. Every polygon with three or more vertices can be triangulated, and this process has wide-ranging 
-                    applications in computer graphics, terrain modeling, and finite element analysis.
+                    forms - triangles. Every polygon with three or more vertices can be triangulated.
                   </p>
                   
                   {/* Basic visualization */}
@@ -533,7 +532,7 @@ def triangulate_polygon(vertices: List[Point]) -> List[Tuple[Point, Point, Point
                       <h5 className="font-medium mb-2">3. Point-in-Triangle Test</h5>
                       <p className="text-gray-700">
                         This test uses barycentric coordinates or the sign of cross products to determine if a point lies 
-                        inside a triangle. It's crucial for checking if a potential ear is valid.
+                        inside a triangle. You need this to check if a potential ear is valid!
                       </p>
                     </div>
                   </div>
