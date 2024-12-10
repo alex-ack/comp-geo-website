@@ -121,7 +121,7 @@ function AnimatedRoutes() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/comp-geo-website">
       <Layout>
         <AnimatedRoutes />
       </Layout>
