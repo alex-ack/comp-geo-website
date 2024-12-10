@@ -286,7 +286,7 @@ def triangulate_polygon(vertices: List[Point]) -> List[Tuple[Point, Point, Point
       const d2 = sign(pt, v2, v3);
       const d3 = sign(pt, v3, v1);
 
-      const hasNeg = (d1 < 0) || (d2 < 0) || (d3 < 0);
+      const hasNeg = (d1 < 0) || (d2 < 0) || (d3 < 0); // here
       const hasPos = (d1 > 0) || (d2 > 0) || (d3 > 0);
 
       return !(hasNeg && hasPos);
@@ -615,3 +615,5 @@ def triangulate_polygon(vertices: List[Point]) -> List[Tuple[Point, Point, Point
 };
 
 export default Triangulation;
+
+// add back clockwise function
