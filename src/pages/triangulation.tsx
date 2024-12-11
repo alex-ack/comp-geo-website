@@ -554,11 +554,12 @@ def triangulate_polygon(vertices: List[Point]) -> List[Tuple[Point, Point, Point
           {/* Interactive Demo Tab */}
           {activeTab === 'interactive' && (
             <div>
-              <div className="flex space-x-4 mb-4">
-                <button
-                  onClick={generateTriangles}
-                  className="px-4 py-2 bg-blue-500 text-white rounded"
-                >
+            <p className="text-gray-700 mb-4">Note: You must place points in clockwise order for the triangulation to work.</p>
+            <div className="flex space-x-4 mb-4">
+              <button
+                onClick={generateTriangles}
+                className="px-4 py-2 bg-blue-500 text-white rounded"
+              >
                   Generate Triangles
                 </button>
                 <button
