@@ -388,8 +388,7 @@ return (
             <div className="mb-6">
               <p className="text-gray-700 mb-4">
                 A geodesic is the shortest path between two points on a surface, while staying on that surface. They are 
-                the natural extension of straight lines to curved spaces, revealing fundamental properties about a surface's 
-                geometry and curvature. Their behavior changes dramatically based on the surface they traverse.
+                the natural extension of straight lines to curved spaces. Their behavior changes dramatically based on the surface they traverse.
               </p>
           
               {/* Side-by-side visualizations */}
